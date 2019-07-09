@@ -6,18 +6,21 @@
 # Return max sum
 import random
 
+n = random.randint(2, 20)
+
 running_sum = 0;
 max_sum = 0;
-array = [31, -41, 59, 26, -53, 58, 97, -93, -23, 84];
-i = 0;
-j = len(array);
+array = []
 
-for x in range(i, j):
+for i in range(n):
+    array.append(random.randint(-100,100))
+
+for x in range(0, len(array)):
     running_sum += array[x];
     if running_sum < 0:
         running_sum = 0;
     if max_sum < running_sum:
         max_sum = running_sum;
 print(max_sum);
-
+print(array)
     

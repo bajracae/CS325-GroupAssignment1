@@ -4,6 +4,7 @@
 #      compute a[i]+a[i+1]+· · · +a[j-1]+a[j]
 #      Keep the max sum found so far
 # Return max sum
+import random
 
 running_sum = 0;
 max_sum = 0;

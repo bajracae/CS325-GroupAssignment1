@@ -5,14 +5,18 @@
 #      Keep the max sum found so far
 # Return max sum
 
+running_sum = 0;
 max_sum = 0;
 array = [31, -41, 59, 26, -53, 58, 97, -93, -23, 84];
 i = 0;
 j = len(array);
 
 for x in range(i, j):
-    max_sum += array[x];
-
+    running_sum += array[x];
+    if running_sum < 0:
+        running_sum = 0;
+    if max_sum < running_sum:
+        max_sum = running_sum;
 print(max_sum);
 
     

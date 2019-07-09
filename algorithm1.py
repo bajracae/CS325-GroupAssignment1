@@ -15,8 +15,8 @@ array = []
 for i in range(n):
     array.append(random.randint(-100,100))
 
-for x in range(0, len(array)):
-    running_sum += array[x];
+for j in range(0, len(array)):
+    running_sum += array[j];
     if running_sum < 0:
         running_sum = 0;
     if max_sum < running_sum:

@@ -20,3 +20,4 @@ for i in range(1, len(array)):
             
 print(max_sum);
 
+# chicken wings
